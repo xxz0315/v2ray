@@ -1,9 +1,12 @@
 1.首先下载脚本：
 wget https://install.direct/go.sh
+
 2.然后执行安装脚本
 sudo bash go.sh
+
 3.安装完之后，使用以下命令启动 V2Ray
 systemctl start v2ray
+
 4.v2ray 的配置文件位于 /etc/v2ray/config.json。v2ray 相对于 shadowsocks 更复杂的地方就在于其有众多的配置选项，针对不同的应用场景有不同的配置方案，从而实现不同的功能，而 shadowsocks 则相对傻瓜一些。要详细讲述 v2ray 的所有配置选项是需要很长的内容的，本文针对被 TCP 阻断的 VPS 来实现 vpn 的场景。下面简单介绍一些配置内容：
 
 VMess
